@@ -1,130 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>RESPONSIVE PERSONAL PORTFOLIO</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince | Portfolio</title>
+
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!--body-->
-    <header class="header">
-        <a href="#" class="logo">Prince Portfolio</a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#services">SERVICES</a>
-            <a href="#portfolio">PORTFOLIO</a>
-            <a href="#contact">CONTACT</a>
-        </nav>
-    </header>
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello,It's Me</h3>
-            <h1>Prince</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <div class="social-media">
-                <a href="https://github.com/Princeturkar" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="https://instagram.com/prince_turkar" target="_blank"><i class='bx bxl-instagram'></i></a>
-        <a href="https://www.linkedin.com/in/prince-turkar-4557b428b/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-            </div>
-            <a href=<a href="portfolio.zip" download class="btn">view Portfolio</a>
-        </div>
-        <div class="home-img">
-            <img src="prii.jpeg" alt="">
-        </div>
-    </section>
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="prii.jpeg" alt="">
-        </div>
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <p>Hello! I'm Prince, a Full Stack Developer. I'm very passionate about creating Unique and Interactive website.</p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </section>
-    <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
 
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
-                <p>I'm working in web development.I enjoy
-                    creating beautiful
-                    web designs using Html css and Js.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
-    </section>
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <div class="portfolio-layer">
-                    <h4>Amazon Website</h4>
-                    <p>Develop  a front-end web application built using HTML, CSS, and JavaScript and Nodejs to simulate the user interface and experience of the popular e-commerce platform, Amazon. .
-.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <div class="portfolio-layer">
-                    <h4>Ambulance System</h4>
-                    <p>Developed a console-based Java application that simulates a smart ambulance dispatch system, connecting patients with the nearest available ambulance using location-based logic.</p>.
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <div class="portfolio-layer">
-                    <h4>Portfolio</h4>
-                    <p>Created a responsive portfolio website to showcase personal projects, skills, and experience..</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+<header class="header">
+    <a href="#home" class="logo">Prince Portfolio</a>
 
-            </div>
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Prince</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+
+        <div class="social-media">
+            <a href="https://github.com/Princeturkar" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
+            <a href="https://instagram.com/prince_turkar" target="_blank" rel="noopener"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/prince-turkar-4557b428b/" target="_blank" rel="noopener"><i class='bx bxl-linkedin'></i></a>
         </div>
 
-        
-        </section>
-    </section>
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>ME!</span></h2>
+        <a href="portfolio.zip" download class="btn">Download Portfolio</a>
+    </div>
 
-        <form action="#" name="submit-to-google-sheet">
-            <div class="input-box">
-                <input type="text" name="Name" placeholder="Name">
-                <input type="email" name="Email Address" placehoholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="number" name="Mobile Number" placeholder"Mobile Number">
-                <input type="text" name="Email Subject" placeholder="Email Subject">
-            </div>
-            <textarea name="Your Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-        <span id="msg"></span>
-    </section>
+    <div class="home-img">
+        <img src="prii.jpeg" alt="Prince Photo">
+    </div>
+</section>
 
-    <footer class="footer">
-        <div class="footer-text">
-            <p>&copy; Prince Portfolio| All Rights Reserved.</p>
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="prii.jpeg" alt="About Prince">
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <p>
+            Hello! I'm Prince, a Full Stack Developer passionate about building
+            modern, responsive, and user-friendly web applications.
+        </p>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+    <h2 class="heading">My <span>Services</span></h2>
+
+    <div class="services-container">
+        <div class="services-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Development</h3>
+            <p>
+                I create responsive and interactive websites using
+                HTML, CSS, JavaScript, and modern tools.
+            </p>
         </div>
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+
+    <div class="portfolio-container">
+
+        <div class="portfolio-box">
+            <div class="portfolio-layer">
+                <h4>Amazon UI Clone</h4>
+                <p>
+                    Front-end e-commerce UI built using HTML, CSS, and JavaScript.
+                </p>
+            </div>
         </div>
-    </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+        <div class="portfolio-box">
+            <div class="portfolio-layer">
+                <h4>Ambulance System</h4>
+                <p>
+                    Java-based console application for smart ambulance dispatch.
+                </p>
+            </div>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="script.js"></script>
+        <div class="portfolio-box">
+            <div class="portfolio-layer">
+                <h4>Personal Portfolio</h4>
+                <p>
+                    Responsive portfolio website showcasing skills and projects.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form>
+        <div class="input-box">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="input-box">
+            <input type="number" placeholder="Mobile Number">
+            <input type="text" placeholder="Email Subject">
+        </div>
+
+        <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-text">
+        <p>&copy; 2025 Prince Portfolio | All Rights Reserved</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
+
+<!-- JS LIBRARIES (HOST LOCALLY IF POSSIBLE) -->
+<script src="js/scrollreveal.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
+
